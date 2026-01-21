@@ -1,0 +1,45 @@
+.cta {
+    position: relative;
+    padding: var(--space-4xl) 0;
+}
+
+.cta__background {
+    position: absolute;
+    inset: 0;
+    background:
+        url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1920&q=80') center/cover no-repeat;
+    z-index: -2;
+}
+
+.cta__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(14, 165, 233, 0.7) 100%);
+    z-index: -1;
+}
+
+.cta__content {
+    text-align: center;
+    color: var(--cloud-white);
+}
+
+.cta__title {
+    color: var(--cloud-white);
+    margin-bottom: var(--space-lg);
+}
+
+.cta__subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: var(--space-2xl);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta__buttons {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+}

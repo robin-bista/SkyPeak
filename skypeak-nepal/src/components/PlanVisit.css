@@ -1,0 +1,78 @@
+.plan-visit {
+    background: var(--cloud-white);
+}
+
+.plan-visit__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-3xl);
+}
+
+.plan-visit__card {
+    display: flex;
+    gap: var(--space-lg);
+    padding: var(--space-xl);
+    background: var(--snow-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(14, 165, 233, 0.1);
+    transition: all var(--transition-normal);
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.plan-visit__card:hover {
+    border-color: var(--sky-blue);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.plan-visit__icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.plan-visit__title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--mountain-grey);
+    margin-bottom: var(--space-xs);
+}
+
+.plan-visit__value {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--deep-navy);
+    margin-bottom: var(--space-xs);
+}
+
+.plan-visit__description {
+    font-size: 0.9rem;
+    color: var(--mountain-grey);
+}
+
+.plan-visit__tips {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.plan-visit__tip {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(56, 189, 248, 0.05) 100%);
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: center;
+}
+
+.plan-visit__tip h4 {
+    font-size: 1.1rem;
+    color: var(--sky-blue);
+    margin-bottom: var(--space-sm);
+}
+
+.plan-visit__tip p {
+    color: var(--mountain-grey);
+    line-height: 1.7;
+}
